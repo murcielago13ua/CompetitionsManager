@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC803AB9-B2FF-433E-BA1C-E0FA2FD3A223}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CompetitionsManager</RootNamespace>
+    <AssemblyName>CompetitionsManager</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\Віталій\Desktop\CompetitionsManager\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>uk-UA</TargetCulture>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CompetitionsManager.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>uzak1FXhPxQ.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CBB876284C1C936EDC1D405E3BAD2303D22C0522</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CompetitionsManager_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SQLite.Designer">
+      <HintPath>..\..\..\..\..\..\..\Program Files\System.Data.SQLite\2013\bin\SQLite.Designer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SQLite, Version=1.0.99.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\System.Data.SQLite\2013\bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseExcelDocCreator.cs" />
+    <Compile Include="CatAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatAddForm.Designer.cs">
+      <DependentUpon>CatAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatChangingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatChangingForm.Designer.cs">
+      <DependentUpon>CatChangingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs" />
+    <Compile Include="CommentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommentForm.Designer.cs">
+      <DependentUpon>CommentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Competitions.cs" />
+    <Compile Include="CompetitionsPage.cs" />
+    <Compile Include="ControlPattern.cs" />
+    <Compile Include="Distance.cs" />
+    <Compile Include="CompCreationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompCreationForm.Designer.cs">
+      <DependentUpon>CompCreationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base.cs" />
+    <Compile Include="DistancePage.cs" />
+    <Compile Include="DistPropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DistPropertiesForm.Designer.cs">
+      <DependentUpon>DistPropertiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistResultsPage.cs" />
+    <Compile Include="DistToCompetitionsRelations.cs" />
+    <Compile Include="ExcelResultCreator.cs" />
+    <Compile Include="ExcelStartProtocolCreator.cs" />
+    <Compile Include="IFormPage.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenCompDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenCompDialog.Designer.cs">
+      <DependentUpon>OpenCompDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenDistanceDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenDistanceDialog.Designer.cs">
+      <DependentUpon>OpenDistanceDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Participation.cs" />
+    <Compile Include="ParticipPropForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParticipPropForm.Designer.cs">
+      <DependentUpon>ParticipPropForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sportsman.cs" />
+    <Compile Include="SportsmanCreatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SportsmanCreatorForm.Designer.cs">
+      <DependentUpon>SportsmanCreatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stage.cs" />
+    <Compile Include="StageParamsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StageParamsForm.Designer.cs">
+      <DependentUpon>StageParamsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StageResult.cs" />
+    <Compile Include="Team.cs" />
+    <Compile Include="TeamAddingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeamAddingForm.Designer.cs">
+      <DependentUpon>TeamAddingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeamPage.cs" />
+    <Compile Include="TeamPropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeamPropertiesForm.Designer.cs">
+      <DependentUpon>TeamPropertiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeamRelation.cs" />
+    <Compile Include="TeamResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeamResultForm.Designer.cs">
+      <DependentUpon>TeamResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniqueStageEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniqueStageEditForm.Designer.cs">
+      <DependentUpon>UniqueStageEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistConditionsCreator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="CompetitionsManager_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CatAddForm.resx">
+      <DependentUpon>CatAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatChangingForm.resx">
+      <DependentUpon>CatChangingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommentForm.resx">
+      <DependentUpon>CommentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompCreationForm.resx">
+      <DependentUpon>CompCreationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DistPropertiesForm.resx">
+      <DependentUpon>DistPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenCompDialog.resx">
+      <DependentUpon>OpenCompDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenDistanceDialog.resx">
+      <DependentUpon>OpenDistanceDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParticipPropForm.resx">
+      <DependentUpon>ParticipPropForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SportsmanCreatorForm.resx">
+      <DependentUpon>SportsmanCreatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StageParamsForm.resx">
+      <DependentUpon>StageParamsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamAddingForm.resx">
+      <DependentUpon>TeamAddingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamPropertiesForm.resx">
+      <DependentUpon>TeamPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamResultForm.resx">
+      <DependentUpon>TeamResultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniqueStageEditForm.resx">
+      <DependentUpon>UniqueStageEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="uzak1FXhPxQ.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
